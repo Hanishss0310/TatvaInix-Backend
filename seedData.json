@@ -1,0 +1,1367 @@
+{
+  "categories": [
+    {
+      "name": "Hospital Beds & Accessories",
+      "slug": "hospital-beds-accessories",
+      "image": "/images/products/hospital-bed.jpg",
+      "shortDescription": "Engineered for intensive clinical use, patient safety, and seamless hygiene. Featuring stainless steel collapsible side rails, IV pole mounts, and smooth hydraulic mechanisms.",
+      "subtitle": "Heavy-duty stainless steel patient care and ICU beds with safety accessories",
+      "cardContent": "Engineered for intensive clinical use, patient safety, and seamless hygiene. Featuring stainless steel collapsible side rails, IV pole mounts, and smooth hydraulic mechanisms.",
+      "tagline": "Heavy-duty stainless steel patient care and ICU beds with safety accessories",
+      "description": "Engineered for intensive clinical use, patient safety, and seamless hygiene. Featuring stainless steel collapsible side rails, IV pole mounts, and smooth hydraulic mechanisms.",
+      "highlights": [
+        "AISI 304 tubular frame",
+        "Collapsible safety side rails",
+        "Smooth hydraulic elevation",
+        "Antistatic medical castors"
+      ],
+      "displayOrder": 1,
+      "status": "active",
+      "featured": true
+    },
+    {
+      "name": "Instrument Trolleys",
+      "slug": "instrument-trolleys",
+      "image": "/images/products/instrument-trolley.jpg",
+      "shortDescription": "Designed for operating rooms and surgical prep suites. Built with crevice-free TIG welds, peripheral safety guard rails, and quiet non-marking swivel wheels.",
+      "subtitle": "Precision mobile transport trolleys with guard rails for clinical suites",
+      "cardContent": "Designed for operating rooms and surgical prep suites. Built with crevice-free TIG welds, peripheral safety guard rails, and quiet non-marking swivel wheels.",
+      "tagline": "Precision mobile transport trolleys with guard rails for clinical suites",
+      "description": "Designed for operating rooms and surgical prep suites. Built with crevice-free TIG welds, peripheral safety guard rails, and quiet non-marking swivel wheels.",
+      "highlights": [
+        "3-sided retention guardrails",
+        "Seamless shelf corners",
+        "Quiet conductive castors",
+        "Corrosion-proof satin finish"
+      ],
+      "displayOrder": 2,
+      "status": "active",
+      "featured": true
+    },
+    {
+      "name": "Dressing Trolleys",
+      "slug": "dressing-trolleys",
+      "image": "/images/products/dressing-trolley.jpg",
+      "shortDescription": "Sanitary treatment trolleys equipped with smooth ball-bearing utility drawers, waste bin receivers, and bowl holders tailored for bedside procedures.",
+      "subtitle": "Multi-tier stainless steel dressing and treatment carts with utility drawers",
+      "cardContent": "Sanitary treatment trolleys equipped with smooth ball-bearing utility drawers, waste bin receivers, and bowl holders tailored for bedside procedures.",
+      "tagline": "Multi-tier stainless steel dressing and treatment carts with utility drawers",
+      "description": "Sanitary treatment trolleys equipped with smooth ball-bearing utility drawers, waste bin receivers, and bowl holders tailored for bedside procedures.",
+      "highlights": [
+        "Integrated utility drawers",
+        "Swiveling bowl & basin rings",
+        "Push-handle ergonomics",
+        "Easy disinfectant wipe-down"
+      ],
+      "displayOrder": 3,
+      "status": "active",
+      "featured": true
+    },
+    {
+      "name": "Mayo Tables",
+      "slug": "mayo-tables",
+      "image": "/images/products/mayo-table.jpg",
+      "shortDescription": "Balanced stainless steel Mayo tables with removable deep-drawn surgical trays. Low-profile bases slip cleanly beneath operating tables and hospital beds.",
+      "subtitle": "Hydraulic and screw-lift cantilevered surgical Mayo instrument stands",
+      "cardContent": "Balanced stainless steel Mayo tables with removable deep-drawn surgical trays. Low-profile bases slip cleanly beneath operating tables and hospital beds.",
+      "tagline": "Hydraulic and screw-lift cantilevered surgical Mayo instrument stands",
+      "description": "Balanced stainless steel Mayo tables with removable deep-drawn surgical trays. Low-profile bases slip cleanly beneath operating tables and hospital beds.",
+      "highlights": [
+        "Removable deep-drawn tray",
+        "Hydraulic foot-pump elevation",
+        "Low-profile mobile base",
+        "Autoclave-safe tray design"
+      ],
+      "displayOrder": 4,
+      "status": "active",
+      "featured": true
+    },
+    {
+      "name": "Examination Tables",
+      "slug": "examination-tables",
+      "image": "/images/products/examination-table.jpg",
+      "shortDescription": "Heavy-gauge stainless steel examination tables featuring multi-position adjustable backrests, integrated paper roll holders, and high load capacity.",
+      "subtitle": "Ergonomic stainless steel medical examination couches and treatment tables",
+      "cardContent": "Heavy-gauge stainless steel examination tables featuring multi-position adjustable backrests, integrated paper roll holders, and high load capacity.",
+      "tagline": "Ergonomic stainless steel medical examination couches and treatment tables",
+      "description": "Heavy-gauge stainless steel examination tables featuring multi-position adjustable backrests, integrated paper roll holders, and high load capacity.",
+      "highlights": [
+        "Reinforced SS 304 framework",
+        "Adjustable ratcheted backrest",
+        "Integrated paper roll rod",
+        "Leveling anti-slip feet"
+      ],
+      "displayOrder": 5,
+      "status": "active",
+      "featured": false
+    },
+    {
+      "name": "Hospital Cabinets & Storage",
+      "slug": "hospital-cabinets-storage",
+      "image": "/images/products/hospital-cabinet.jpg",
+      "shortDescription": "Aseptic storage units featuring toughened glass doors, three-point locking systems, and height-adjustable stainless steel shelves for medical supplies.",
+      "subtitle": "Hygienic stainless steel drug cabinets, linen lockers, and instrument storage",
+      "cardContent": "Aseptic storage units featuring toughened glass doors, three-point locking systems, and height-adjustable stainless steel shelves for medical supplies.",
+      "tagline": "Hygienic stainless steel drug cabinets, linen lockers, and instrument storage",
+      "description": "Aseptic storage units featuring toughened glass doors, three-point locking systems, and height-adjustable stainless steel shelves for medical supplies.",
+      "highlights": [
+        "Lockable toughened glass doors",
+        "Adjustable stainless shelving",
+        "Dust-sealed gasket perimeter",
+        "Floor or wall-mounted options"
+      ],
+      "displayOrder": 6,
+      "status": "active",
+      "featured": false
+    },
+    {
+      "name": "Surgical Instrument Tables",
+      "slug": "surgical-instrument-tables",
+      "image": "/images/products/surgical-prep-table.jpg",
+      "shortDescription": "High-surface-area sterile layout tables engineered with hat-channel stiffening, radius corners, and heavy-duty locking casters for delicate surgical arrays.",
+      "subtitle": "Curved and rectangular sterile field tables for operating theatres",
+      "cardContent": "High-surface-area sterile layout tables engineered with hat-channel stiffening, radius corners, and heavy-duty locking casters for delicate surgical arrays.",
+      "tagline": "Curved and rectangular sterile field tables for operating theatres",
+      "description": "High-surface-area sterile layout tables engineered with hat-channel stiffening, radius corners, and heavy-duty locking casters for delicate surgical arrays.",
+      "highlights": [
+        "Vibration-damped under-top",
+        "Curved OT layout options",
+        "Full argon-purged TIG welds",
+        "Rigid heavy-duty tubular legs"
+      ],
+      "displayOrder": 7,
+      "status": "active",
+      "featured": false
+    },
+    {
+      "name": "Hospital Sinks & Scrub Stations",
+      "slug": "hospital-sinks-scrub-stations",
+      "image": "/images/products/scrub-sink.jpg",
+      "shortDescription": "Deep-drawn stainless steel surgical scrub stations with sloped anti-splash basins, infrared sensor faucets, and integrated digital thermostatic mixing valves.",
+      "subtitle": "Touch-free sensor and knee-operated surgical scrub sinks with splash walls",
+      "cardContent": "Deep-drawn stainless steel surgical scrub stations with sloped anti-splash basins, infrared sensor faucets, and integrated digital thermostatic mixing valves.",
+      "tagline": "Touch-free sensor and knee-operated surgical scrub sinks with splash walls",
+      "description": "Deep-drawn stainless steel surgical scrub stations with sloped anti-splash basins, infrared sensor faucets, and integrated digital thermostatic mixing valves.",
+      "highlights": [
+        "Hands-free sensor operation",
+        "Deep tapered anti-splash bowl",
+        "AISI 316 / 304 alloy options",
+        "Integrated rear backsplash"
+      ],
+      "displayOrder": 8,
+      "status": "active",
+      "featured": false
+    },
+    {
+      "name": "Stainless Steel Racks & Shelving",
+      "slug": "ss-racks-shelving",
+      "image": "/images/products/stainless-rack.jpg",
+      "shortDescription": "High-capacity, chemical-resistant shelving systems designed for autoclave packs, medical cold rooms, clean corridors, and central sterile supply departments.",
+      "subtitle": "Modular solid and perforated stainless steel racks for CSSD and sterile stores",
+      "cardContent": "High-capacity, chemical-resistant shelving systems designed for autoclave packs, medical cold rooms, clean corridors, and central sterile supply departments.",
+      "tagline": "Modular solid and perforated stainless steel racks for CSSD and sterile stores",
+      "description": "High-capacity, chemical-resistant shelving systems designed for autoclave packs, medical cold rooms, clean corridors, and central sterile supply departments.",
+      "highlights": [
+        "Up to 400 kg shelf capacity",
+        "Perforated airflow shelves",
+        "Tool-free height adjustment",
+        "Cold room & moisture resistant"
+      ],
+      "displayOrder": 9,
+      "status": "active",
+      "featured": false
+    },
+    {
+      "name": "Custom Stainless Steel Fabrication",
+      "slug": "custom-ss-fabrication",
+      "image": "/images/products/custom-passbox.jpg",
+      "shortDescription": "Custom architectural and medical stainless steel solutions fabricated to precise hospital floor plans, engineering drawings, and infection control requirements.",
+      "subtitle": "Bespoke hospital equipment, cleanroom pass boxes, and custom sanitary fixtures",
+      "cardContent": "Custom architectural and medical stainless steel solutions fabricated to precise hospital floor plans, engineering drawings, and infection control requirements.",
+      "tagline": "Bespoke hospital equipment, cleanroom pass boxes, and custom sanitary fixtures",
+      "description": "Custom architectural and medical stainless steel solutions fabricated to precise hospital floor plans, engineering drawings, and infection control requirements.",
+      "highlights": [
+        "Precision CNC laser cutting",
+        "Custom dimensional fabrication",
+        "Interlocked cleanroom pass boxes",
+        "Argon-shielded sanitary finish"
+      ],
+      "displayOrder": 10,
+      "status": "active",
+      "featured": false
+    }
+  ],
+  "products": [
+    {
+      "name": "Stainless Steel ICU Electric & Hydraulic Hospital Bed",
+      "slug": "ss-icu-patient-bed-hydraulic",
+      "sku": "TI-HOS-101",
+      "category": "hospital-beds-accessories",
+      "categoryName": "Hospital Beds & Accessories",
+      "shortDescription": "Full stainless steel intensive care patient bed with collapsible safety rails and central locking.",
+      "description": "Fabricated from surgical-grade AISI 304 stainless steel tubing and heavy-gauge sheet metal. Engineered for intensive clinical environments where frequent chemical wipe-downs and patient safety are paramount. Features smooth backrest elevation, knee-break adjustments, and collapsible stainless side railings.",
+      "materialGrade": "AISI 304 Surgical Grade Stainless Steel",
+      "finish": "No. 4 Satin Brush (Non-reflective, easy disinfection)",
+      "gauge": "16 SWG Deck, 14 SWG Base Frame",
+      "dimensions": "2150 x 980 x 550-800 mm (Custom dimensions available)",
+      "loadCapacity": "250 kg Safe Working Load",
+      "hygieneStandard": "Crevice-Free Argon TIG Welds, High Chemical Resistance",
+      "basePrice": 18000,
+      "images": [
+        "/images/products/hospital-bed.jpg",
+        "/images/categories/hospital-beds.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Framework Material",
+          "value": "AISI 304 heavy-gauge rectangular stainless steel pipe"
+        },
+        {
+          "label": "Mattress Platform",
+          "value": "Perforated stainless steel 4-section deck for ventilation"
+        },
+        {
+          "label": "Safety Side Rails",
+          "value": "Full length collapsible stainless steel safety drop rails"
+        },
+        {
+          "label": "Mobility",
+          "value": "125 mm antistatic medical grade castors with central locking brakes"
+        },
+        {
+          "label": "Accessories Included",
+          "value": "Stainless steel telescopic IV drip pole & urine bag hooks"
+        },
+        {
+          "label": "Welding",
+          "value": "Sanitary argon back-purged TIG welds dressed flush"
+        }
+      ],
+      "features": [
+        "Engineered specifically to resist corrosive hospital disinfectants and chlorine wipes",
+        "Smooth pneumatic or hydraulic elevation mechanism for caregiver ergonomics",
+        "Integrated corner protective rubber bumpers to prevent wall damage",
+        "Four corner sockets for multi-position IV pole placement"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Semi-Fowler Stainless Steel Ward Bed",
+      "slug": "ss-semi-fowler-hospital-bed",
+      "sku": "TI-HOS-102",
+      "category": "hospital-beds-accessories",
+      "categoryName": "Hospital Beds & Accessories",
+      "shortDescription": "Durable stainless steel ward bed with smooth screw-crank backrest elevation.",
+      "description": "Standard inpatient ward bed constructed with rigid stainless steel tubular frames and stainless sheet mattress deck. Equipped with smooth screw mechanism with folding handle for effortless backrest elevation.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "Directional Satin Polish",
+      "gauge": "16 SWG Mattress Top, 38 mm OD Legs",
+      "dimensions": "2060 x 910 x 600 mm",
+      "loadCapacity": "200 kg Safe Working Load",
+      "hygieneStandard": "Sanitary Hospital Infection Control Design",
+      "basePrice": 20500,
+      "images": [
+        "/images/categories/hospital-beds.jpg",
+        "/images/products/hospital-bed.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Operation",
+          "value": "Manually operated smooth folding crank mechanism"
+        },
+        {
+          "label": "Head/Foot Bows",
+          "value": "Stainless steel tubular bows with laminated panels or full SS"
+        },
+        {
+          "label": "Legs",
+          "value": "Mounted on heavy-duty rubber shoe stoppers or optional castors"
+        },
+        {
+          "label": "Backrest Range",
+          "value": "Adjustable from 0° to 70° smoothly"
+        }
+      ],
+      "features": [
+        "Heavy-duty construction ensures zero wobbling under rigorous daily ward use",
+        "Rust-proof even in high-humidity tropical hospital corridors",
+        "Quick-attach brackets for drip stands and oxygen cylinder cages"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Heavy-Base Stainless Steel Telescopic IV Stand",
+      "slug": "ss-telescopic-iv-pole-stand",
+      "sku": "TI-HOS-103",
+      "category": "hospital-beds-accessories",
+      "categoryName": "Hospital Beds & Accessories",
+      "shortDescription": "Five-prong weighted stainless base IV infusion stand with 4 safety hooks.",
+      "description": "Precision balanced intravenous drip pole featuring a heavy-duty low-center-of-gravity cast stainless steel base and smooth height-locking collar. Fitted with 5 antistatic swivel wheels for effortless transit beside patient beds.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "Electropolished & Satin Brush",
+      "gauge": "16 SWG Telescopic Pipe",
+      "dimensions": "Height adjustable 1350 to 2200 mm; Base dia 500 mm",
+      "loadCapacity": "25 kg (Balanced hook loading)",
+      "hygieneStandard": "Seamless wipe-down compliant",
+      "basePrice": 23000,
+      "images": [
+        "/images/products/hospital-bed.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Base Geometry",
+          "value": "5-legged low-clearance weighted stainless steel base"
+        },
+        {
+          "label": "Top Hooks",
+          "value": "4 stainless steel rams-horn safety hooks"
+        },
+        {
+          "label": "Locking Collar",
+          "value": "Ergonomic quick-tightening friction collar"
+        },
+        {
+          "label": "Wheels",
+          "value": "50 mm dual wheel medical grade non-marking castors"
+        }
+      ],
+      "features": [
+        "Weighted base prevents tipping even when laden with infusion pumps",
+        "Seamless column tubes prevent liquid ingress during routine washdowns"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Two-Tier Stainless Steel Instrument Trolley",
+      "slug": "ss-two-tier-instrument-trolley",
+      "sku": "TI-INS-104",
+      "category": "instrument-trolleys",
+      "categoryName": "Instrument Trolleys",
+      "shortDescription": "Operating theatre instrument cart with 3-sided guard rails on both shelves.",
+      "description": "Essential mobile workstation for surgical suites and minor procedure rooms. Constructed from high-tensile AISI 304 stainless steel tubing with sound-deadened double pressed shelves. Continuous TIG welding eliminates crevices where bacteria can harbor.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Satin Brush",
+      "gauge": "18 SWG Shelves, 25 mm dia SS Pipe Frame",
+      "dimensions": "680 x 450 x 850 mm (Also available in 750x450 & 900x500 mm)",
+      "loadCapacity": "120 kg Uniformly Distributed Load",
+      "hygieneStandard": "Crevice-Free Welds, Disinfectant Safe",
+      "basePrice": 25500,
+      "images": [
+        "/images/products/instrument-trolley.jpg",
+        "/images/categories/instrument-trolleys.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Shelves",
+          "value": "Two stainless steel pressed shelves with sound deadening pads"
+        },
+        {
+          "label": "Guard Rails",
+          "value": "3-sided stainless rod rails on top and bottom shelves"
+        },
+        {
+          "label": "Castors",
+          "value": "100 mm synthetic medical castors, 2 with total-lock brakes"
+        },
+        {
+          "label": "Push Handle",
+          "value": "Integrated ergonomic tubular push handle"
+        }
+      ],
+      "features": [
+        "Silent operation with acoustic dampeners under each stainless tray",
+        "Anti-drop retention guardrails prevent sterile instruments from sliding off during transit",
+        "Smooth non-marking wheels glide effortlessly over threshold transitions"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Three-Tier Stainless Steel OT Instrument Trolley",
+      "slug": "ss-three-tier-instrument-trolley",
+      "sku": "TI-INS-105",
+      "category": "instrument-trolleys",
+      "categoryName": "Instrument Trolleys",
+      "shortDescription": "High-capacity 3-shelf mobile surgical transport cart with protective rails.",
+      "description": "Engineered for major operating room procedures requiring extensive tray storage. Provides three spacious tiers with peripheral guard rails and high-clearance tubular uprights for rapid access to sterile packs.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "Satin Finish 240 Grit",
+      "gauge": "18 SWG Shelves, 25 mm Tubular Uprights",
+      "dimensions": "900 x 500 x 900 mm",
+      "loadCapacity": "160 kg Uniformly Distributed Load",
+      "hygieneStandard": "Infection Control Compliant",
+      "basePrice": 28000,
+      "images": [
+        "/images/categories/instrument-trolleys.jpg",
+        "/images/products/instrument-trolley.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Shelf Configuration",
+          "value": "3 tiers with 280 mm vertical shelf clearance"
+        },
+        {
+          "label": "Castor Wheels",
+          "value": "100 mm ball-bearing swivel castors with thread guards"
+        },
+        {
+          "label": "Welding",
+          "value": "Argon purged TIG welding ground flush"
+        }
+      ],
+      "features": [
+        "Maximum vertical storage capacity within a compact floor footprint",
+        "Rigid frame construction prevents flex or wobble under heavy instrument trays"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Stainless Steel Anesthesia Procedure Trolley",
+      "slug": "ss-anesthesia-instrument-cart",
+      "sku": "TI-INS-106",
+      "category": "instrument-trolleys",
+      "categoryName": "Instrument Trolleys",
+      "shortDescription": "Specialized surgical cart with utility drawers and oxygen cylinder cradle.",
+      "description": "Designed specifically for anesthesiologists and surgical nurses. Integrates smooth-slide lockable drawers, upper instrument tray, lower utility shelf, and rear brackets for emergency gas cylinders.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Satin Brush",
+      "gauge": "16/18 SWG Construction",
+      "dimensions": "750 x 500 x 950 mm",
+      "loadCapacity": "140 kg",
+      "hygieneStandard": "Aseptic Joint Detailing",
+      "basePrice": 30500,
+      "images": [
+        "/images/products/instrument-trolley.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Drawers",
+          "value": "2 smooth ball-bearing stainless steel drawers with central key lock"
+        },
+        {
+          "label": "Side Accessories",
+          "value": "Stainless IV pole bracket and utility waste bin hook"
+        },
+        {
+          "label": "Wheels",
+          "value": "100 mm antistatic wheels with dual-action brakes"
+        }
+      ],
+      "features": [
+        "Lockable medicine drawers protect sensitive anesthesia consumables",
+        "Top work surface has raised spill-containment rim"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Stainless Steel Dressing Trolley with Dual Drawers",
+      "slug": "ss-dressing-trolley-with-drawers",
+      "sku": "TI-DRE-107",
+      "category": "dressing-trolleys",
+      "categoryName": "Dressing Trolleys",
+      "shortDescription": "Ward treatment cart with two slide-out drawers, bowl ring, and waste receptacle.",
+      "description": "A dedicated mobile procedure cart for wound care, medication delivery, and bedside dressings. Fabricated from prime AISI 304 stainless steel with two telescopic stainless drawers, swivel bowl attachment, and stainless waste bucket bracket.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Satin Brush",
+      "gauge": "18 SWG Sheet, 25 mm dia SS Pipe",
+      "dimensions": "750 x 450 x 850 mm",
+      "loadCapacity": "100 kg",
+      "hygieneStandard": "Crevice-Free Welds, Hospital Sanitizer Resistant",
+      "basePrice": 33000,
+      "images": [
+        "/images/products/dressing-trolley.jpg",
+        "/images/categories/dressing-trolleys.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Drawers",
+          "value": "Two telescopic smooth stainless steel drawers with recessed handles"
+        },
+        {
+          "label": "Basin Accessories",
+          "value": "Swiveling stainless steel bowl holder and waste bucket ring"
+        },
+        {
+          "label": "Top Tray",
+          "value": "Recessed tray top with 3-sided stainless guardrail"
+        },
+        {
+          "label": "Castors",
+          "value": "100 mm synthetic medical swivel wheels with brakes"
+        }
+      ],
+      "features": [
+        "All-in-one procedural cart keeps sterile dressings, ointments, and disposals organized",
+        "Removable stainless steel bowls for straightforward autoclave sterilization",
+        "Recessed handle design prevents snagging on staff garments"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Compact Dressing Trolley with Single Utility Drawer",
+      "slug": "ss-single-drawer-dressing-trolley",
+      "sku": "TI-DRE-108",
+      "category": "dressing-trolleys",
+      "categoryName": "Dressing Trolleys",
+      "shortDescription": "Streamlined ward treatment cart for quick patient dressing rounds.",
+      "description": "A compact and nimble dressing trolley tailored for general hospital wards, outpatient clinics, and emergency triage rooms where space is at a premium.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "Satin Finish",
+      "gauge": "18 SWG Stainless Steel",
+      "dimensions": "600 x 450 x 850 mm",
+      "loadCapacity": "90 kg",
+      "hygieneStandard": "Smooth Hospital Wipe-Down Surface",
+      "basePrice": 35500,
+      "images": [
+        "/images/categories/dressing-trolleys.jpg",
+        "/images/products/dressing-trolley.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Configuration",
+          "value": "Single full-width drawer, 1 top shelf, 1 bottom shelf"
+        },
+        {
+          "label": "Railings",
+          "value": "Guard rails on 3 sides of top and lower shelves"
+        },
+        {
+          "label": "Wheels",
+          "value": "75 mm twin-wheel castors with front locking brakes"
+        }
+      ],
+      "features": [
+        "Agile steering through crowded hospital corridors and narrow ward bays",
+        "Non-marking castor tires leave zero residue on vinyl and epoxy flooring"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Stainless Steel Soiled Dressing & Linen Hamper Trolley",
+      "slug": "ss-linen-soiled-dressing-cart",
+      "sku": "TI-DRE-109",
+      "category": "dressing-trolleys",
+      "categoryName": "Dressing Trolleys",
+      "shortDescription": "Mobile stainless frame with foot-pedal lid operation for sanitary disposal.",
+      "description": "Hygienic waste and soiled dressing cart with a foot-pedal operated stainless lid to ensure hands-free disposal in clinical areas, mitigating cross-contamination risks.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "Directional Satin Brush",
+      "gauge": "16 SWG Frame, 18 SWG Lid",
+      "dimensions": "500 x 500 x 850 mm",
+      "loadCapacity": "60 kg",
+      "hygieneStandard": "Hands-Free Infection Control Design",
+      "basePrice": 38000,
+      "images": [
+        "/images/products/dressing-trolley.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Lid Mechanism",
+          "value": "Heavy-duty foot pedal with soft-closing damper"
+        },
+        {
+          "label": "Bag Retention",
+          "value": "Rubber tension ring holds clinical waste liners securely"
+        },
+        {
+          "label": "Wheels",
+          "value": "75 mm swivel castors with brakes"
+        }
+      ],
+      "features": [
+        "Touch-free operation eliminates contact between contaminated gloves and disposal unit",
+        "Solid stainless steel base prevents liquid dripping onto ward floor"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Hydraulic Stainless Steel Mayo Instrument Table",
+      "slug": "ss-hydraulic-mayo-instrument-stand",
+      "sku": "TI-MAY-110",
+      "category": "mayo-tables",
+      "categoryName": "Mayo Tables",
+      "shortDescription": "Pedal-operated hydraulic height adjustment with removable deep surgical tray.",
+      "description": "Precision engineered for operating rooms and surgical theaters. Features a heavy-duty hydraulic foot pump enabling seamless height adjustment without breaking the sterile field. The removable deep-drawn surgical tray can be placed directly into autoclaves.",
+      "materialGrade": "AISI 304 Surgical Grade Stainless Steel",
+      "finish": "Electropolished & Satin Brush",
+      "gauge": "16 SWG Column, 18 SWG Deep Tray",
+      "dimensions": "Tray: 600 x 450 x 25 mm; Height: 900 to 1350 mm adjustable",
+      "loadCapacity": "40 kg Uniform Load",
+      "hygieneStandard": "Autoclave Safe Tray, Crevice-Free Welds",
+      "basePrice": 40500,
+      "images": [
+        "/images/products/mayo-table.jpg",
+        "/images/categories/mayo-tables.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Tray Construction",
+          "value": "Seamless deep-drawn AISI 304 tray with rolled edges"
+        },
+        {
+          "label": "Elevation Type",
+          "value": "Enclosed hydraulic cylinder with foot pump pedal"
+        },
+        {
+          "label": "Base Geometry",
+          "value": "Low profile cantilever U-shape base (slips under OT tables)"
+        },
+        {
+          "label": "Castor Wheels",
+          "value": "65 mm twin conductive wheels with dual brakes"
+        }
+      ],
+      "features": [
+        "Hands-free foot pump allows surgical nurses to adjust height during operations",
+        "Low clearance base effortlessly glides under low-height surgical tables and beds",
+        "Seamless rounded tray corners eliminate crevices where dried fluids accumulate"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Manual Screw-Lift Stainless Steel Mayo Table",
+      "slug": "ss-manual-screw-mayo-stand",
+      "sku": "TI-MAY-111",
+      "category": "mayo-tables",
+      "categoryName": "Mayo Tables",
+      "shortDescription": "Economical, dependable surgical Mayo stand with friction locking screw.",
+      "description": "Robust and reliable surgical Mayo stand equipped with a precision machined stainless steel telescopic column and heavy locking screw. Ideal for minor OT rooms, dental surgeries, and day-care clinics.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Satin Polish",
+      "gauge": "18 SWG Tray, 38 mm Tubular Upright",
+      "dimensions": "Tray: 540 x 400 x 20 mm; Height: 850 to 1250 mm",
+      "loadCapacity": "30 kg",
+      "hygieneStandard": "Sanitary Surgical Suite Compatible",
+      "basePrice": 43000,
+      "images": [
+        "/images/categories/mayo-tables.jpg",
+        "/images/products/mayo-table.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Height Adjustment",
+          "value": "Smooth telescopic stainless pipe with hand-tightening knob"
+        },
+        {
+          "label": "Base Type",
+          "value": "Weighted dual tubular cantilever base"
+        },
+        {
+          "label": "Castors",
+          "value": "50 mm non-marking swivel castors"
+        }
+      ],
+      "features": [
+        "Simple, fail-safe mechanical lock requires zero hydraulic fluid maintenance",
+        "Detachable tray facilitates swift sterilization between patient procedures"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Two-Section Stainless Steel Medical Examination Couch",
+      "slug": "ss-medical-examination-couch",
+      "sku": "TI-EXA-112",
+      "category": "examination-tables",
+      "categoryName": "Examination Tables",
+      "shortDescription": "Clinical exam table with ratcheted headrest and medical grade vinyl mattress.",
+      "description": "Heavy-duty examination couch constructed from 16 SWG AISI 304 stainless steel square section tubing. Fitted with an adjustable backrest supported on heavy-duty ratchets and a premium high-density antimicrobial foam mattress.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Satin Brush",
+      "gauge": "16 SWG Framework",
+      "dimensions": "1830 x 600 x 810 mm (Custom lengths available)",
+      "loadCapacity": "220 kg Patient Weight Rating",
+      "hygieneStandard": "Infection Control Compliant, Chemical Resistant",
+      "basePrice": 45500,
+      "images": [
+        "/images/products/examination-table.jpg",
+        "/images/categories/examination-tables.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Framework",
+          "value": "38 x 38 mm AISI 304 stainless steel box section"
+        },
+        {
+          "label": "Backrest Adjustment",
+          "value": "Multi-position ratchet mechanism (0° to 65°)"
+        },
+        {
+          "label": "Paper Roll Holder",
+          "value": "Integrated rear stainless rod for disposable exam rolls"
+        },
+        {
+          "label": "Upholstery",
+          "value": "Flame-retardant, antimicrobial medical-grade vinyl"
+        }
+      ],
+      "features": [
+        "Rigid boxed frame prevents squeaking or shifting during patient examinations",
+        "Stainless steel step-stool attachment bracket available on request",
+        "Equipped with heavy-duty leveling feet to compensate for uneven clinic floors"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Three-Section Stainless Steel Obstetric Examination Table",
+      "slug": "ss-gynecological-examination-table",
+      "sku": "TI-EXA-113",
+      "category": "examination-tables",
+      "categoryName": "Examination Tables",
+      "shortDescription": "Specialized 3-section table with lithotomy leg stirrups and sliding fluid basin.",
+      "description": "Tailored for obstetrics, gynecology, and urology examination suites. Features independent head, seat, and leg sections, with adjustable padded lithotomy stirrups and a slide-out stainless steel fluid tray.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "Satin Finish",
+      "gauge": "14/16 SWG Frame & Mechanism",
+      "dimensions": "1800 x 600 x 850 mm",
+      "loadCapacity": "200 kg Safe Working Load",
+      "hygieneStandard": "Easy Fluid Management, Disinfectant Safe",
+      "basePrice": 48000,
+      "images": [
+        "/images/categories/examination-tables.jpg",
+        "/images/products/examination-table.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Sections",
+          "value": "3-piece ergonomic layout with detachable/sliding leg section"
+        },
+        {
+          "label": "Stirrups",
+          "value": "Padded stainless lithotomy crutches with clamp locks"
+        },
+        {
+          "label": "Drainage Tray",
+          "value": "Deep-drawn stainless steel sliding collection tray"
+        },
+        {
+          "label": "Welding",
+          "value": "Argon TIG welded watertight joints"
+        }
+      ],
+      "features": [
+        "Effortless slide-away leg section transitions table swiftly from general exam to OB/GYN mode",
+        "Removable fluid catchment basin slides out on stainless runners for swift autoclave cleaning"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Stainless Steel Surgical Instrument Cabinet with Glass Doors",
+      "slug": "ss-hospital-instrument-cabinet-glass",
+      "sku": "TI-HOS-114",
+      "category": "hospital-cabinets-storage",
+      "categoryName": "Hospital Cabinets & Storage",
+      "shortDescription": "Lockable dual-door medicine cabinet with toughened glass and 4 adjustable shelves.",
+      "description": "Engineered for OT sterile storage corridors, ICUs, and pharmacy storage. Built completely from prime AISI 304 stainless steel with two full-length toughened safety glass doors, recessed handles, three-point lock, and adjustable internal shelving.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Directional Satin Brush",
+      "gauge": "18 SWG Body & Shelves, 16 SWG Base Frame",
+      "dimensions": "900 x 450 x 1800 mm (Custom dimensions available)",
+      "loadCapacity": "80 kg per shelf",
+      "hygieneStandard": "Dust-Sealed Gasket, Sterile Corridor Standard",
+      "basePrice": 50500,
+      "images": [
+        "/images/products/hospital-cabinet.jpg",
+        "/images/categories/hospital-cabinets.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Doors",
+          "value": "Dual framed doors with 5 mm toughened clear safety glass"
+        },
+        {
+          "label": "Shelving",
+          "value": "4 height-adjustable stainless steel shelves on slotted pilasters"
+        },
+        {
+          "label": "Locking System",
+          "value": "Flush lever handle with 3-point espagnolette deadbolt"
+        },
+        {
+          "label": "Sealing",
+          "value": "Continuous medical-grade silicone perimeter gasket"
+        }
+      ],
+      "features": [
+        "Full visibility of surgical inventory without exposing contents to ambient room dust",
+        "Smooth sloped-top option prevents dust accumulation and complies with OT guidelines",
+        "Non-shedding stainless hinges guarantee lifetime alignment without sagging"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Lockable Wall-Mounted Stainless Medicine Cabinet",
+      "slug": "ss-wall-mounted-narcotics-cabinet",
+      "sku": "TI-HOS-115",
+      "category": "hospital-cabinets-storage",
+      "categoryName": "Hospital Cabinets & Storage",
+      "shortDescription": "Secure wall-hanging pharmaceutical locker with dual locks for restricted drugs.",
+      "description": "Compact high-security wall cabinet for nurse stations and clean utility rooms. Heavy-gauge stainless steel with solid flush door and dual independent key locks for controlled drug storage.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "Satin Brush",
+      "gauge": "16 SWG Door, 18 SWG Cabinet Body",
+      "dimensions": "600 x 300 x 750 mm",
+      "loadCapacity": "50 kg Wall-Anchored",
+      "hygieneStandard": "Aseptic Wall-Mount Design",
+      "basePrice": 53000,
+      "images": [
+        "/images/categories/hospital-cabinets.jpg",
+        "/images/products/hospital-cabinet.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Security",
+          "value": "Dual independent tumbler locks for dual-custody compliance"
+        },
+        {
+          "label": "Internal Shelves",
+          "value": "2 fixed stainless steel shelves with front retaining lip"
+        },
+        {
+          "label": "Mounting",
+          "value": "Concealed heavy-gauge wall anchor mounting points"
+        }
+      ],
+      "features": [
+        "Meets strict institutional narcotics and critical pharmaceutical security regulations",
+        "Continuous stainless piano hinge resists tampering and forced entry"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Perforated Stainless Steel Linen & Garment Locker",
+      "slug": "ss-soiled-linen-storage-cupboard",
+      "sku": "TI-HOS-116",
+      "category": "hospital-cabinets-storage",
+      "categoryName": "Hospital Cabinets & Storage",
+      "shortDescription": "Louvered stainless storage unit for sterile scrubs, lab coats, and linens.",
+      "description": "Full-height medical locker featuring precision punched ventilation louvers on doors to maintain continuous airflow across clean scrubs and linens while preventing moisture condensation.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Satin Brush",
+      "gauge": "18 SWG Construction",
+      "dimensions": "900 x 500 x 1850 mm",
+      "loadCapacity": "250 kg Total Load",
+      "hygieneStandard": "Ventilated Cleanroom Compatible",
+      "basePrice": 55500,
+      "images": [
+        "/images/products/hospital-cabinet.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Ventilation",
+          "value": "Precision CNC punched sanitary louvers on top and bottom"
+        },
+        {
+          "label": "Internal Fitout",
+          "value": "Top shelf with full-length stainless coat hanger rail"
+        },
+        {
+          "label": "Legs",
+          "value": "Elevated 150 mm stainless tubular legs for sub-floor cleaning"
+        }
+      ],
+      "features": [
+        "Elevated leg design allows floor scrubbers and mops to sanitize underneath completely",
+        "Perforations maintain dry, odor-free airflow around sterile surgical gowns"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Curved OT Sterile Field Instrument Table",
+      "slug": "ss-curved-angular-surgical-instrument-table",
+      "sku": "TI-SUR-117",
+      "category": "surgical-instrument-tables",
+      "categoryName": "Surgical Instrument Tables",
+      "shortDescription": "Horseshoe / curved layout surgical table for ergonomic instrument access.",
+      "description": "Designed specifically to wrap around surgical teams during major orthopedic, cardiovascular, and neurological operations. The continuous curved stainless top brings dozens of sterile instrument sets within immediate reach of scrub personnel.",
+      "materialGrade": "AISI 304 / AISI 316 (Optional)",
+      "finish": "No. 4 Satin Brush (Glare-reducing)",
+      "gauge": "16 SWG Top with hat stiffeners, 38 mm Legs",
+      "dimensions": "1800 x 600 x 850 mm (Curved radius 1200 mm)",
+      "loadCapacity": "250 kg Distributed Load",
+      "hygieneStandard": "Argon Back-Purged TIG Welds, Zero Crevices",
+      "basePrice": 58000,
+      "images": [
+        "/images/products/surgical-prep-table.jpg",
+        "/images/categories/surgical-tables.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Top Geometry",
+          "value": "Seamless curved profile with 15 mm marine edge"
+        },
+        {
+          "label": "Acoustic Lining",
+          "value": "Under-top sound deadening polyurethane compound"
+        },
+        {
+          "label": "Legs & Castors",
+          "value": "6 heavy stainless tubular legs with 100 mm total-lock castors"
+        },
+        {
+          "label": "Undershelf",
+          "value": "Curved full-length reinforced stainless storage undershelf"
+        }
+      ],
+      "features": [
+        "Glare-reducing satin finish minimizes reflection from powerful surgical overhead lights",
+        "Marine anti-drip rim prevents surgical irrigation fluids from spilling onto the OT floor",
+        "Acoustic sound dampening prevents metallic clatter when laying down surgical instruments"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Rectangular Surgical Instrument Prep Table with Guard Rail",
+      "slug": "ss-rectangular-heavy-surgical-prep-table",
+      "sku": "TI-SUR-118",
+      "category": "surgical-instrument-tables",
+      "categoryName": "Surgical Instrument Tables",
+      "shortDescription": "Heavy-duty sterile pack setup table with 3-sided perimeter guardrail.",
+      "description": "The foundation of sterile layout in operating rooms and CSSD packing halls. Fabricated from 1.6 mm thick AISI 304 stainless steel with heavy tubular legs and 3-sided instrument retention rails.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "Satin Polish 240 Grit",
+      "gauge": "16 SWG Top, 16 SWG Undershelf",
+      "dimensions": "1500 x 750 x 850 mm (Custom sizes available)",
+      "loadCapacity": "300 kg Distributed Load",
+      "hygieneStandard": "Crevice-Free Sanitary OT Construction",
+      "basePrice": 60500,
+      "images": [
+        "/images/categories/surgical-tables.jpg",
+        "/images/products/surgical-prep-table.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Guard Rails",
+          "value": "3-sided 50 mm high stainless rod retention rails"
+        },
+        {
+          "label": "Undershelf",
+          "value": "Full width heavy-gauge stainless steel storage undershelf"
+        },
+        {
+          "label": "Castors",
+          "value": "125 mm conductive antistatic polyurethane wheels with brakes"
+        }
+      ],
+      "features": [
+        "Extra-wide 750 mm depth comfortably accommodates full orthopedic tray assemblies",
+        "Conductive castors dissipate electrostatic charges safely into conductive OT floors"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Height-Adjustable Surgical Prep Table (Hydraulic)",
+      "slug": "ss-mobile-utility-surgical-table-hydraulic",
+      "sku": "TI-SUR-119",
+      "category": "surgical-instrument-tables",
+      "categoryName": "Surgical Instrument Tables",
+      "shortDescription": "Pedal-elevated sterile instrument table matching surgeon working heights.",
+      "description": "Features smooth pedal-actuated hydraulic height adjustment from 800 mm to 1150 mm, allowing surgical staff to align instrument height perfectly with patient position.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Satin Brush",
+      "gauge": "16 SWG Top Sheet",
+      "dimensions": "1200 x 600 x 800-1150 mm (Adjustable)",
+      "loadCapacity": "150 kg",
+      "hygieneStandard": "Aseptic Joint Standard",
+      "basePrice": 63000,
+      "images": [
+        "/images/products/surgical-prep-table.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Adjustment",
+          "value": "Twin synchronized hydraulic lifting cylinders with dual pedals"
+        },
+        {
+          "label": "Top Surface",
+          "value": "Seamless sheet metal top with radius safety corners"
+        },
+        {
+          "label": "Wheels",
+          "value": "100 mm synthetic medical grade swivel castors"
+        }
+      ],
+      "features": [
+        "Ergonomic adjustment eliminates staff back fatigue during lengthy multi-hour operations",
+        "Hermetically sealed hydraulic system guarantees zero fluid leakage in sterile zones"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Two-Bay Surgical Scrub Sink Station (Infrared Sensor)",
+      "slug": "ss-surgical-scrub-sink-two-bay",
+      "sku": "TI-HOS-120",
+      "category": "hospital-sinks-scrub-stations",
+      "categoryName": "Hospital Sinks & Scrub Stations",
+      "shortDescription": "Wall-mounted dual surgical scrub station with hands-free sensor taps and splashback.",
+      "description": "The industry standard for operating suite entryways. Fabricated with deep-tapered contours from high-purity AISI 304 or optional AISI 316 stainless steel. Specifically designed bowl geometry prevents water splashing onto surgeons’ scrub attire.",
+      "materialGrade": "AISI 304 or AISI 316 Marine Grade Stainless Steel",
+      "finish": "Hairline Satin Brush (Ra < 0.4 µm)",
+      "gauge": "14 SWG Deep Basin, 16 SWG Wall Apron",
+      "dimensions": "1600 x 600 x 1150 mm",
+      "loadCapacity": "Wall anchor rated 180 kg",
+      "hygieneStandard": "Aseptic Scrub Standard, Anti-Splash Contours",
+      "basePrice": 65500,
+      "images": [
+        "/images/products/scrub-sink.jpg",
+        "/images/categories/scrub-sinks.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Basin Geometry",
+          "value": "Deep-drawn 350 mm tapered bowl with anti-splash slope"
+        },
+        {
+          "label": "Tapware",
+          "value": "Infrared hands-free gooseneck sensor faucets with manual override"
+        },
+        {
+          "label": "Backsplash",
+          "value": "Integrated 450 mm high rear splashback with beveled top"
+        },
+        {
+          "label": "Internal Manifold",
+          "value": "Pre-plumbed stainless thermostatic mixing valve assembly"
+        }
+      ],
+      "features": [
+        "Sloped forward basin lip prevents water drops from pooling on the floor during elbow scrubs",
+        "Contactless operation guarantees surgical team sterility before entering theater",
+        "Radius internal bowl corners prevent soap scum and bacterial biofilm buildup"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Single-Bay Scrub Sink with Knee-Paddle Operation",
+      "slug": "ss-single-bay-scrub-sink-knee-operated",
+      "sku": "TI-HOS-121",
+      "category": "hospital-sinks-scrub-stations",
+      "categoryName": "Hospital Sinks & Scrub Stations",
+      "shortDescription": "Compact scrub station with ergonomic mechanical knee-activated water valves.",
+      "description": "Ideal for minor surgery clinics, endoscopy suites, and trauma bays where battery-free, fail-safe mechanical operation is preferred. Features a smooth knee-actuated paddle for water temperature and flow control.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "Satin Polish",
+      "gauge": "14 SWG Basin, 16 SWG Frame",
+      "dimensions": "800 x 600 x 1150 mm",
+      "loadCapacity": "Wall mounted rating 120 kg",
+      "hygieneStandard": "Hands-Free Scrub Standard",
+      "basePrice": 68000,
+      "images": [
+        "/images/categories/scrub-sinks.jpg",
+        "/images/products/scrub-sink.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Activation",
+          "value": "Full-width mechanical front knee paddle"
+        },
+        {
+          "label": "Gooseneck Spout",
+          "value": "Solid stainless steel high-arc spout with laminar flow"
+        },
+        {
+          "label": "Soap Dispenser",
+          "value": "Foot-pedal or knee-operated Betadine dispenser bracket"
+        }
+      ],
+      "features": [
+        "Reliable mechanical operation requires zero electrical power or battery maintenance",
+        "Heavy-gauge stainless steel absorbs repetitive knee strikes without deforming"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "CSSD Decontamination & Soaking Wash Sink (Double Bowl)",
+      "slug": "ss-cssd-deep-soak-wash-sink",
+      "sku": "TI-HOS-122",
+      "category": "hospital-sinks-scrub-stations",
+      "categoryName": "Hospital Sinks & Scrub Stations",
+      "shortDescription": "Deep decontamination wash station for surgical instrument disinfection.",
+      "description": "Engineered for central sterile supply departments (CSSD). Features two extra-deep 400 mm soaking tubs with integrated rear splashback, drain boards, and compressed air/water gun connection ports for cannulated instrument flushing.",
+      "materialGrade": "AISI 316 Acid-Resistant Stainless Steel",
+      "finish": "No. 4 Satin Brush",
+      "gauge": "14 SWG Bowls, 16 SWG Drainboard",
+      "dimensions": "1800 x 700 x 900 mm",
+      "loadCapacity": "250 kg Distributed Load",
+      "hygieneStandard": "CSSD Chemical Soak Resistant",
+      "basePrice": 70500,
+      "images": [
+        "/images/products/scrub-sink.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Bowls",
+          "value": "Two 500 x 500 x 400 mm deep bowls with radius corners"
+        },
+        {
+          "label": "Drainboards",
+          "value": "Fluted draining boards sloping directly into sink basins"
+        },
+        {
+          "label": "Gun Attachment",
+          "value": "Twin manifold for water jet and compressed air cleaning guns"
+        }
+      ],
+      "features": [
+        "AISI 316 alloy resists harsh enzymatic detergents and chemical disinfectants",
+        "Extra-deep basins accommodate heavy orthopedic tray immersion without splashing"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Heavy-Duty 4-Tier Solid Stainless Steel Storage Rack",
+      "slug": "ss-heavy-duty-modular-storage-rack-solid",
+      "sku": "TI-SS-123",
+      "category": "ss-racks-shelving",
+      "categoryName": "Stainless Steel Racks & Shelving",
+      "shortDescription": "Reinforced 4-tier solid shelving for sterile supply and medical cold rooms.",
+      "description": "High-density storage shelving constructed from authenticated AISI 304 stainless steel. Each shelf features underside hat-channel reinforcements supporting up to 350 kg per tier. Tool-free adjustable shelf heights accommodate varying crate sizes.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Directional Satin Finish",
+      "gauge": "16 SWG Shelves, 14 SWG Corner Uprights",
+      "dimensions": "1500 x 500 x 1800 mm (Custom lengths available)",
+      "loadCapacity": "350 kg per shelf (1400 kg total UDL)",
+      "hygieneStandard": "Cold Room & Clean Corridor Certified",
+      "basePrice": 73000,
+      "images": [
+        "/images/products/stainless-rack.jpg",
+        "/images/categories/racks-shelving.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Shelving Type",
+          "value": "4 solid stainless steel shelves with 40 mm double return bends"
+        },
+        {
+          "label": "Reinforcement",
+          "value": "Longitudinal hat-stiffeners bonded underneath every tier"
+        },
+        {
+          "label": "Corner Posts",
+          "value": "38 mm dia round or 40 x 40 mm square tubular uprights"
+        },
+        {
+          "label": "Feet",
+          "value": "Heavy-duty adjustable stainless leveling bullet feet"
+        }
+      ],
+      "features": [
+        "Impervious to sub-zero freezer condensation and high-humidity hospital autoclaves",
+        "Solid flat shelves prevent small instrument packs or ampoules from falling through",
+        "Completely boltless modular assembly option allows swift reallocation on site"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Perforated Stainless Steel Airflow Shelving Unit",
+      "slug": "ss-perforated-cleanroom-airflow-rack",
+      "sku": "TI-SS-124",
+      "category": "ss-racks-shelving",
+      "categoryName": "Stainless Steel Racks & Shelving",
+      "shortDescription": "Laminar airflow perforated shelving for pharmaceutical & sterile storage.",
+      "description": "Optimized for cleanrooms and sterile packing halls where laminar airflow must pass freely through storage racks. Features precision CNC-punched circular perforations with burr-free chamfered edges.",
+      "materialGrade": "AISI 304 / AISI 316",
+      "finish": "Electropolished / Satin Finish",
+      "gauge": "16 SWG Perforated Sheets",
+      "dimensions": "1200 x 450 x 1800 mm",
+      "loadCapacity": "250 kg per shelf",
+      "hygieneStandard": "Cleanroom Laminar Airflow Compatible",
+      "basePrice": 75500,
+      "images": [
+        "/images/categories/racks-shelving.jpg",
+        "/images/products/stainless-rack.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Perforation Pattern",
+          "value": "8 mm diameter holes with 15 mm pitch (40% open area)"
+        },
+        {
+          "label": "Edges",
+          "value": "Burr-free deburred holes to protect glove wearers"
+        },
+        {
+          "label": "Mobility",
+          "value": "Optional 100 mm stainless steel swivel castors"
+        }
+      ],
+      "features": [
+        "Maintains laminar air currents throughout cleanroom air circulation systems",
+        "Electropolished finish guarantees zero micro-particulate shedding"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Dynamic Stainless Steel Cleanroom Pass Box",
+      "slug": "ss-dynamic-cleanroom-pass-box",
+      "sku": "TI-CUS-125",
+      "category": "custom-ss-fabrication",
+      "categoryName": "Custom Stainless Steel Fabrication",
+      "shortDescription": "Interlocked pass-through transfer hatch with UV germicidal disinfection.",
+      "description": "Custom manufactured to wall thickness specifications for operating theater transfer and pharma cleanroom corridors. Features mechanical or electronic door interlocking, UV germicidal lamp, and double-walled flush stainless steel interior.",
+      "materialGrade": "AISI 304 / AISI 316 Stainless Steel",
+      "finish": "Mirror or Satin Brush",
+      "gauge": "16 SWG Double-Wall Construction",
+      "dimensions": "600 x 600 x 600 mm (Custom dimensions to project specs)",
+      "loadCapacity": "100 kg Internal Loading",
+      "hygieneStandard": "Crevice-Free Internal Radius, UV Disinfection",
+      "basePrice": 78000,
+      "images": [
+        "/images/products/custom-passbox.jpg",
+        "/images/categories/custom-fabrication.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Interlock System",
+          "value": "Electro-magnetic interlock prevents both doors opening simultaneously"
+        },
+        {
+          "label": "Sterilization",
+          "value": "Integrated 15W UV-C germicidal lamp with auto-shutoff timer"
+        },
+        {
+          "label": "Viewing Windows",
+          "value": "Double-glazed flush toughened glass inspection ports"
+        },
+        {
+          "label": "Internal Detailing",
+          "value": "Coved seamless internal radius corners for zero dust traps"
+        }
+      ],
+      "features": [
+        "Maintains pressure differential between sterile surgical theater and prep room",
+        "Custom wall mounting flange conceals masonry or cleanroom panel cutouts seamlessly"
+      ],
+      "status": "published",
+      "featured": true,
+      "customizable": true
+    },
+    {
+      "name": "Custom Hospital Stainless Wall Cladding & Crash Rails",
+      "slug": "ss-custom-architectural-handrails-scrub-cladding",
+      "sku": "TI-CUS-126",
+      "category": "custom-ss-fabrication",
+      "categoryName": "Custom Stainless Steel Fabrication",
+      "shortDescription": "Bespoke hospital corridor crash rails and hygiene wall cladding panels.",
+      "description": "Custom fabricated stainless steel wall protection panels and heavy-gauge crash rails designed to shield hospital corridor walls from trolley and bed impacts while providing an easy-to-sanitize surface.",
+      "materialGrade": "AISI 304 Stainless Steel",
+      "finish": "No. 4 Directional Satin Brush",
+      "gauge": "14 to 18 SWG to Specification",
+      "dimensions": "Fabricated to architectural site layout blueprints",
+      "loadCapacity": "High impact resistance",
+      "hygieneStandard": "Seamless Joint Detailing",
+      "basePrice": 80500,
+      "images": [
+        "/images/categories/custom-fabrication.jpg",
+        "/images/products/custom-passbox.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Fabrication",
+          "value": "CNC laser cut and CNC press-braked to exact site dimensions"
+        },
+        {
+          "label": "Joints",
+          "value": "Concealed interlocking clip systems or argon TIG welded"
+        },
+        {
+          "label": "Impact Backing",
+          "value": "Moisture-resistant composite core backing optional"
+        }
+      ],
+      "features": [
+        "Eliminates wall scuffs, paint chipping, and plaster damage in high-traffic corridors",
+        "Provides a clean, modern metallic aesthetic with decades of service life"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    },
+    {
+      "name": "Sanitary Stainless Steel Floor Drainage Channels",
+      "slug": "ss-custom-linear-floor-drainage-channels",
+      "sku": "TI-CUS-127",
+      "category": "custom-ss-fabrication",
+      "categoryName": "Custom Stainless Steel Fabrication",
+      "shortDescription": "Continuous slope linear floor drains with foul air traps for scrub rooms.",
+      "description": "Custom length stainless steel drainage channels with continuous longitudinal fall, foul air water traps, and removable anti-slip mesh gratings for hospital washdown bays and OT scrub areas.",
+      "materialGrade": "AISI 304 / AISI 316 Stainless Steel",
+      "finish": "Pickled & Passivated / Bead Blasted",
+      "gauge": "14 SWG (2.0 mm) Heavy Gauge",
+      "dimensions": "Custom lengths from 1 to 20 meters with built-in fall",
+      "loadCapacity": "Pedestrian and heavy trolley load certified",
+      "hygieneStandard": "Sanitary Water-Trap Standard",
+      "basePrice": 83000,
+      "images": [
+        "/images/products/custom-passbox.jpg"
+      ],
+      "specs": [
+        {
+          "label": "Grating Type",
+          "value": "Anti-slip heel-safe stainless mesh or slot grating"
+        },
+        {
+          "label": "Strainer",
+          "value": "Removable stainless sediment basket and water seal trap"
+        },
+        {
+          "label": "Slope",
+          "value": "Built-in 1:100 longitudinal slope toward central outlet"
+        }
+      ],
+      "features": [
+        "Rapidly evacuates washdown water without standing puddles or microbial growth",
+        "Integrated water seal traps prevent foul sewer odors from entering clinical corridors"
+      ],
+      "status": "published",
+      "featured": false,
+      "customizable": true
+    }
+  ]
+}
