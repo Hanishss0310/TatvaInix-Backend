@@ -29,7 +29,7 @@ const AdminUser = require('./Models/AdminUser');
 const NewsletterSubscriber = require('./src/models/NewsletterSubscriber');
 const AuditLog = require('./Models/AuditLog');
 
-const BASE_URL = 'http://127.0.0.1:5000/api';
+const BASE_URL = process.env.API_BASE_URL || 'https://api.tatvainox.com/api';
 
 const runIntegrationTestSuite = async () => {
   console.log('================================================================');

@@ -9,7 +9,7 @@ const NewsletterSubscriber = require('./src/models/NewsletterSubscriber');
 const NewsletterCampaign = require('./src/models/NewsletterCampaign');
 const { generateUnsubscribeToken, verifyUnsubscribeToken } = require('./src/services/emailService');
 
-const BASE_URL = 'http://127.0.0.1:5000/api';
+const BASE_URL = process.env.API_BASE_URL || 'https://api.tatvainox.com/api';
 const AUTH_HEADER = { Authorization: 'Bearer mock-jwt-token-admin' };
 
 const runAcceptanceTests = async () => {
@@ -290,14 +290,14 @@ const runAcceptanceTests = async () => {
     // Test 18: Unrelated APIs (Health, Products, Categories) intact
     // -------------------------------------------------------------
     console.log('\n--- 18: Preserving Existing API Endpoints ---');
-    const healthRes = await fetch('http://127.0.0.1:5000/api/health');
+    const healthRes = await fetch(`${BASE_URL}/health`);
     const healthJson = await healthRes.json();
     assert(healthRes.status === 200 && healthJson.status === 'ok', 'Existing health check endpoint functional');
 
-    const catRes = await fetch('http://127.0.0.1:5000/api/categories');
+    const catRes = await fetch(`${BASE_URL}/categories`);
     assert(catRes.status === 200, 'Existing categories API functional');
 
-    const prodRes = await fetch('http://127.0.0.1:5000/api/products');
+    const prodRes = await fetch(`${BASE_URL}/products`);
     assert(prodRes.status === 200, 'Existing products API functional');
 
     console.log('\n================================================================');

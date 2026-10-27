@@ -6,7 +6,7 @@ const { renderWelcomeEmail } = require('../templates/welcomeEmail');
 const { renderCampaignEmail } = require('../templates/newsletterEmail');
 
 const UNSUBSCRIBE_SECRET = process.env.UNSUBSCRIBE_TOKEN_SECRET || 'tatva_inox_unsub_secret_2026';
-const API_BASE_URL = process.env.API_BASE_URL || 'http://127.0.0.1:5000/api';
+const API_BASE_URL = process.env.API_BASE_URL || 'https://api.tatvainox.com/api';
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'office@tatvainox.in';
 
 /**
@@ -45,7 +45,7 @@ const getUnsubscribeUrl = (subscriber) => {
   const token = generateUnsubscribeToken(subscriber);
   let baseUrl = process.env.PUBLIC_API_URL || API_BASE_URL;
   if (!baseUrl || baseUrl.includes('127.0.0.1') || baseUrl.includes('localhost')) {
-    baseUrl = 'https://tatvainox.com/api';
+    baseUrl = 'https://api.tatvainox.com/api';
   }
   return `${baseUrl}/newsletter/unsubscribe?token=${encodeURIComponent(token)}`;
 };

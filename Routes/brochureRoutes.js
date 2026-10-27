@@ -137,7 +137,10 @@ router.post('/request', leadLimiter, async (req, res) => {
 
     // Prepare authorized download URL
     const downloadUrl = `/api/brochures/download?token=${downloadToken}`;
-    const fullDownloadUrl = `${req.protocol}://${req.get('host')}${downloadUrl}`;
+    const apiOrigin = process.env.API_BASE_URL
+      ? process.env.API_BASE_URL.replace(/\/api\/?$/, '')
+      : `${req.protocol}://${req.get('host')}`;
+    const fullDownloadUrl = `${apiOrigin}${downloadUrl}`;
 
     // Dispatch confirmation and admin alert emails asynchronously
     sendBrochureLeadEmails(newLead, fullDownloadUrl).catch((err) => {

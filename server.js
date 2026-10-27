@@ -46,8 +46,13 @@ const allowedOrigins = [
   'http://localhost:3000',
   'http://127.0.0.1:3000',
   'https://tatvainox.com',
-  'https://tatvainox.in'
-];
+  'https://www.tatvainox.com',
+  'https://tatvainox.in',
+  'https://www.tatvainox.in',
+  'https://api.tatvainox.com',
+  'https://admin.tatvainox.com',
+  process.env.CLIENT_URL
+].filter(Boolean);
 
 app.use(
   cors({
@@ -165,8 +170,8 @@ mongoose
     console.error('[Database Error] Failed to connect to MongoDB:', err.message);
   });
 
-// Start HTTP Server on 127.0.0.1 (localhost)
-const HOST = '127.0.0.1';
+// Start HTTP Server on HOST (supports 0.0.0.0 or configured host)
+const HOST = process.env.HOST || '0.0.0.0';
 const server = app
   .listen(PORT, HOST, () => {
     console.log(`[Server] Tatva Inox Backend listening on http://${HOST}:${PORT}`);

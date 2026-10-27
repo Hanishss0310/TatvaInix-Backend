@@ -114,8 +114,8 @@ PORT=5000
 NODE_ENV=development
 
 # Frontend Origins
-CLIENT_URL=http://localhost:5173
-API_BASE_URL=http://127.0.0.1:5000/api
+CLIENT_URL=https://tatvainox.com
+API_BASE_URL=https://api.tatvainox.com/api
 
 # MongoDB Connection
 MONGODB_URI=mongodb://127.0.0.1:27017/tatva_inox

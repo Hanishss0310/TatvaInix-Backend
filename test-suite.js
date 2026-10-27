@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const http = require('http');
 
+const BASE_URL = process.env.API_BASE_URL || 'https://api.tatvainox.com/api';
+
 // Helper to make multipart request using built-in FormData or manual boundary
 async function runTests() {
   console.log('=== STARTING TATVA INOX BACKEND INTEGRATION TESTS ===\n');
@@ -38,7 +40,7 @@ async function runTests() {
   const catImageBlob = new Blob([fs.readFileSync(imageFiles[0])], { type: 'image/png' });
   catFormData.append('image', catImageBlob, 'cat-hero.png');
 
-  const catRes = await fetch('http://127.0.0.1:5000/api/categories', {
+  const catRes = await fetch(`${BASE_URL}/categories`, {
     method: 'POST',
     body: catFormData
   });
@@ -49,7 +51,7 @@ async function runTests() {
 
   // 3. Verify category in public categories list
   console.log('\n--- 3. Verifying Category in Public Categories ---');
-  const getCatRes = await fetch('http://127.0.0.1:5000/api/categories');
+  const getCatRes = await fetch(`${BASE_URL}/categories`);
   const allCats = await getCatRes.json();
   const foundCat = allCats.find(c => c.slug === 'intensive-care-surgical-units');
   if (!foundCat) throw new Error('Created category not found in public list');
@@ -90,7 +92,7 @@ async function runTests() {
     prodFormData.append('images', fileBlob, `passbox-view-${i + 1}.png`);
   }
 
-  const prodRes = await fetch('http://127.0.0.1:5000/api/products', {
+  const prodRes = await fetch(`${BASE_URL}/products`, {
     method: 'POST',
     body: prodFormData
   });
@@ -113,7 +115,7 @@ async function runTests() {
 
   // 6. Test Product Retrieval via Slug
   console.log('\n--- 6. Testing Product Retrieval by Slug ---');
-  const getProdRes = await fetch('http://127.0.0.1:5000/api/products/slug/automated-surgical-passbox-chamber');
+  const getProdRes = await fetch(`${BASE_URL}/products/slug/automated-surgical-passbox-chamber`);
   const retrievedProd = await getProdRes.json();
   if (!retrievedProd || retrievedProd.name !== 'Automated Surgical Passbox Chamber') {
     throw new Error('Failed to retrieve product by slug');
@@ -129,7 +131,7 @@ async function runTests() {
     shortDescription: 'Updated description: Status changed to draft and images reversed.'
   };
 
-  const updateRes = await fetch(`http://127.0.0.1:5000/api/products/${prodData.id}`, {
+  const updateRes = await fetch(`${BASE_URL}/products/${prodData.id}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(updatePayload)
@@ -143,7 +145,7 @@ async function runTests() {
 
   // 8. Confirm draft product does NOT appear on public /api/products
   console.log('\n--- 8. Verifying Draft Product is Hidden from Public Catalogue ---');
-  const publicProdsRes = await fetch('http://127.0.0.1:5000/api/products');
+  const publicProdsRes = await fetch(`${BASE_URL}/products`);
   const publicProds = await publicProdsRes.json();
   const isFoundPublic = publicProds.some(p => p.id === prodData.id || p.slug === prodData.slug);
   if (isFoundPublic) {
@@ -153,7 +155,7 @@ async function runTests() {
 
   // 9. Test Category Deletion Guard (Must fail because product is assigned)
   console.log('\n--- 9. Testing Category Deletion Guard ---');
-  const delCatRes = await fetch(`http://127.0.0.1:5000/api/categories/${catData.id}`, {
+  const delCatRes = await fetch(`${BASE_URL}/categories/${catData.id}`, {
     method: 'DELETE'
   });
   const delCatData = await delCatRes.json();
@@ -165,7 +167,7 @@ async function runTests() {
 
   // 10. Delete the product
   console.log('\n--- 10. Testing Product Deletion & Safe File Cleanup ---');
-  const delProdRes = await fetch(`http://127.0.0.1:5000/api/products/${prodData.id}`, {
+  const delProdRes = await fetch(`${BASE_URL}/products/${prodData.id}`, {
     method: 'DELETE'
   });
   const delProdData = await delProdRes.json();
@@ -173,13 +175,13 @@ async function runTests() {
   if (!delProdRes.ok) throw new Error('Product deletion failed');
 
   // Verify product no longer exists
-  const checkProdRes = await fetch(`http://127.0.0.1:5000/api/products/${prodData.id}`);
+  const checkProdRes = await fetch(`${BASE_URL}/products/${prodData.id}`);
   if (checkProdRes.status !== 404) throw new Error('Product still exists after delete');
   console.log('✓ Product deleted from MongoDB');
 
   // 11. Now delete the category (should succeed now that 0 products are assigned)
   console.log('\n--- 11. Testing Category Deletion After Product Removed ---');
-  const delCatRes2 = await fetch(`http://127.0.0.1:5000/api/categories/${catData.id}`, {
+  const delCatRes2 = await fetch(`${BASE_URL}/categories/${catData.id}`, {
     method: 'DELETE'
   });
   const delCatData2 = await delCatRes2.json();
