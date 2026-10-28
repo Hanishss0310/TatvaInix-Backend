@@ -68,7 +68,7 @@ const brochureLeadSchema = new mongoose.Schema(
     brochureName: {
       type: String,
       trim: true,
-      default: 'tatva-inox-product-catalogue.pdf'
+      default: 'TatvaInox.pdf'
     },
     brochurePath: {
       type: String,

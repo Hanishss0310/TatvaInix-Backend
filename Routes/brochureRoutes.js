@@ -15,7 +15,7 @@ const { sendBrochureLeadEmails } = require('../src/services/emailService');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'tatva_inox_jwt_super_secret_key_2026_healthcare';
 const BROCHURES_DIR = path.resolve(__dirname, '..', 'storage', 'brochures');
-const MASTER_CATALOGUE_NAME = 'tatva-inox-product-catalogue.pdf';
+const MASTER_CATALOGUE_NAME = 'TatvaInox.pdf';
 
 // Ensure brochures dir exists
 if (!fs.existsSync(BROCHURES_DIR)) {
