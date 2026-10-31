@@ -31,9 +31,24 @@ const productSchema = new mongoose.Schema(
       uppercase: true,
       index: true
     },
+    department: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Department',
+      index: true
+    },
+    departmentSlug: {
+      type: String,
+      trim: true,
+      index: true
+    },
+    departmentName: {
+      type: String,
+      trim: true,
+      default: ''
+    },
+    // Maintained for full backward compatibility
     category: {
       type: String,
-      required: [true, 'Product category is required'],
       trim: true,
       index: true
     },

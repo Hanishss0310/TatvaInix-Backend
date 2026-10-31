@@ -6,6 +6,8 @@ const fs = require('fs');
 const uploadDirs = {
   products: path.join(__dirname, '..', 'uploads', 'products'),
   categories: path.join(__dirname, '..', 'uploads', 'categories'),
+  departments: path.join(__dirname, '..', 'uploads', 'departments'),
+  banners: path.join(__dirname, '..', 'uploads', 'banners'),
   media: path.join(__dirname, '..', 'uploads', 'media'),
   brochures: path.join(__dirname, '..', 'storage', 'brochures')
 };
@@ -21,7 +23,11 @@ const unifiedStorage = multer.diskStorage({
   destination: (req, file, cb) => {
     if (file.fieldname === 'brochure') {
       cb(null, uploadDirs.brochures);
-    } else if (file.fieldname === 'category' || file.fieldname === 'image') {
+    } else if (file.fieldname === 'banner' || file.fieldname === 'bannerImage' || (req.baseUrl && req.baseUrl.includes('banners'))) {
+      cb(null, uploadDirs.banners);
+    } else if (file.fieldname === 'department' || (req.baseUrl && req.baseUrl.includes('departments'))) {
+      cb(null, uploadDirs.departments);
+    } else if (file.fieldname === 'category') {
       cb(null, uploadDirs.categories);
     } else if (file.fieldname === 'files') {
       cb(null, uploadDirs.media);
@@ -92,6 +98,27 @@ const uploadCategoryImage = multer({
   limits: imageLimits
 }).single('image');
 
+const uploadBannerImage = multer({
+  storage: unifiedStorage,
+  fileFilter: unifiedFileFilter,
+  limits: imageLimits
+}).single('image');
+
+const uploadDepartmentAssets = multer({
+  storage: unifiedStorage,
+  fileFilter: unifiedFileFilter,
+  limits: imageLimits
+}).fields([
+  { name: 'image', maxCount: 1 },
+  { name: 'bannerImage', maxCount: 1 }
+]);
+
+const uploadDepartmentImage = multer({
+  storage: unifiedStorage,
+  fileFilter: unifiedFileFilter,
+  limits: imageLimits
+}).single('image');
+
 const uploadMediaImages = multer({
   storage: unifiedStorage,
   fileFilter: unifiedFileFilter,
@@ -131,8 +158,12 @@ module.exports = {
   uploadProductImages,
   uploadProductAssets,
   uploadCategoryImage,
+  uploadBannerImage,
+  uploadDepartmentAssets,
+  uploadDepartmentImage,
   uploadMediaImages,
   uploadSingleBrochure,
   removeUploadedFile,
   uploadDirs
 };
+

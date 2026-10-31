@@ -8,6 +8,8 @@ const fs = require('fs');
 
 const productRoutes = require('./Routes/productRoutes');
 const categoryRoutes = require('./Routes/categoryRoutes');
+const departmentRoutes = require('./Routes/departmentRoutes');
+const bannerRoutes = require('./Routes/bannerRoutes');
 const mediaRoutes = require('./Routes/mediaRoutes');
 const brochureRoutes = require('./Routes/brochureRoutes');
 const leadRoutes = require('./Routes/leadRoutes');
@@ -74,7 +76,7 @@ app.use(express.urlencoded({ extended: true, limit: '15mb' }));
 
 // Ensure upload folders & private storage folders exist
 const uploadsPath = path.join(__dirname, 'uploads');
-['products', 'categories', 'media'].forEach((sub) => {
+['products', 'categories', 'departments', 'banners', 'media'].forEach((sub) => {
   const p = path.join(uploadsPath, sub);
   if (!fs.existsSync(p)) fs.mkdirSync(p, { recursive: true });
 });
@@ -97,6 +99,8 @@ app.get('/api/health', (req, res) => {
     service: 'Tatva Inox Enterprise API',
     features: [
       'products',
+      'departments',
+      'banners',
       'categories',
       'brochures',
       'leads',
@@ -113,6 +117,8 @@ app.get('/api/health', (req, res) => {
 
 // Mount Resource Routes
 app.use('/api/products', productRoutes);
+app.use('/api/departments', departmentRoutes);
+app.use('/api/banners', bannerRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/media', mediaRoutes);
 app.use('/api/auth', authRoutes);

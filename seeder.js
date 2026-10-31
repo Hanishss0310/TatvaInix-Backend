@@ -4,6 +4,8 @@ const fs = require('fs');
 const bcrypt = require('bcryptjs');
 
 const Category = require('./Models/Category');
+const Department = require('./Models/Department');
+const Banner = require('./Models/Banner');
 const Product = require('./Models/Product');
 const AdminUser = require('./Models/AdminUser');
 const BrochureLead = require('./Models/BrochureLead');
@@ -214,6 +216,57 @@ const initialLeads = [
   }
 ];
 
+const initialBanners = [
+  {
+    title: 'AISI 304 ICU Electric Hospital Bed',
+    subtitle: 'Critical Care Patient Engineering',
+    description: 'Engineered with anti-microbial non-directional satin brush finish, zero fluid accumulation crevice-free TIG welds, and collapsible dual safety guardrails.',
+    image: '/images/products/hospital-bed.jpg',
+    badge: 'Featured Innovation',
+    ctaText: 'View Details',
+    ctaLink: '/products/ss-icu-patient-bed-hydraulic',
+    displayOrder: 1,
+    status: 'active',
+    intervalSeconds: 5
+  },
+  {
+    title: 'Modular Surgical Instrument Trolleys',
+    subtitle: 'Sterile Operating Suite Mobility',
+    description: 'Dual and triple-tier medical-grade AISI 304 stainless steel trolleys with 3-sided guard rails and anti-static noiseless swivel castors.',
+    image: '/images/products/instrument-trolley.jpg',
+    badge: 'Operation Theatre',
+    ctaText: 'Explore Trolleys',
+    ctaLink: '/products/ss-two-tier-instrument-trolley',
+    displayOrder: 2,
+    status: 'active',
+    intervalSeconds: 5
+  },
+  {
+    title: 'Touch-Free Dual-Bay Scrub Station',
+    subtitle: 'Aseptic Infection Control & CSSD',
+    description: 'Surgical scrub sinks featuring hands-free infrared optical sensors, thermostatic mixing valves, and seamless deep-drawn splashback basins.',
+    image: '/images/products/scrub-sink.jpg',
+    badge: 'Sanitary Excellence',
+    ctaText: 'View Scrub Stations',
+    ctaLink: '/products/ss-surgical-scrub-sink-two-bay',
+    displayOrder: 3,
+    status: 'active',
+    intervalSeconds: 5
+  },
+  {
+    title: 'Dynamic Cleanroom Pass-Through Box',
+    subtitle: 'Sterile Corridor Transfer Systems',
+    description: 'HEPA-filtered electromagnetic interlock transfer chambers preventing cross-contamination between sterile corridors and cleanroom environments.',
+    image: '/images/products/custom-passbox.jpg',
+    badge: 'Custom Fabrication',
+    ctaText: 'Learn More',
+    ctaLink: '/products/ss-dynamic-cleanroom-pass-box',
+    displayOrder: 4,
+    status: 'active',
+    intervalSeconds: 5
+  }
+];
+
 const seedInitialDataIfEmpty = async () => {
   try {
     // 1. Ensure private brochure storage exists
@@ -256,7 +309,7 @@ const seedInitialDataIfEmpty = async () => {
       console.log('Successfully seeded admin and editor users.');
     }
 
-    // 3. Seed Categories
+    // 3. Seed Categories (preserve existing categories)
     const categoryCount = await Category.countDocuments();
     if (categoryCount === 0) {
       console.log('Seeding initial categories into MongoDB...');
@@ -264,12 +317,72 @@ const seedInitialDataIfEmpty = async () => {
       console.log(`Successfully seeded ${seedData.categories.length} categories.`);
     }
 
-    // 4. Seed Products
+    // 4. Seed / Migrate Departments from Categories
+    const departmentCount = await Department.countDocuments();
+    if (departmentCount === 0) {
+      console.log('Migrating categories to departments in MongoDB...');
+      const categories = await Category.find();
+      const departmentsToInsert = categories.map((cat, idx) => ({
+        name: cat.name,
+        slug: cat.slug,
+        description: cat.description || cat.shortDescription || '',
+        shortDescription: cat.shortDescription || cat.description || '',
+        subtitle: cat.subtitle || cat.tagline || '',
+        image: cat.image || '/images/products/hospital-bed.jpg',
+        bannerImage: '',
+        highlights: cat.highlights || [],
+        displayOrder: cat.displayOrder || idx + 1,
+        status: cat.status || 'active',
+        featured: cat.featured || false
+      }));
+
+      if (departmentsToInsert.length > 0) {
+        await Department.insertMany(departmentsToInsert);
+        console.log(`Successfully migrated ${departmentsToInsert.length} departments.`);
+      }
+    }
+
+    // 5. Seed Products
     const productCount = await Product.countDocuments();
     if (productCount === 0) {
       console.log('Seeding initial products into MongoDB...');
       await Product.insertMany(seedData.products);
       console.log(`Successfully seeded ${seedData.products.length} products.`);
+    }
+
+    // Safe migration: Link products to their respective department
+    const departments = await Department.find();
+    const deptMap = new Map();
+    departments.forEach((d) => {
+      deptMap.set(d.slug, d);
+    });
+
+    const unmappedProducts = await Product.find({
+      $or: [{ department: { $exists: false } }, { department: null }]
+    });
+
+    if (unmappedProducts.length > 0) {
+      console.log(`Mapping ${unmappedProducts.length} products to their respective departments...`);
+      for (const prod of unmappedProducts) {
+        const matchingDept = deptMap.get(prod.category) || deptMap.get(prod.departmentSlug);
+        if (matchingDept) {
+          prod.department = matchingDept._id;
+          prod.departmentSlug = matchingDept.slug;
+          prod.departmentName = matchingDept.name;
+          if (!prod.category) prod.category = matchingDept.slug;
+          if (!prod.categoryName) prod.categoryName = matchingDept.name;
+          await prod.save();
+        }
+      }
+      console.log('Successfully completed product department mapping.');
+    }
+
+    // 6. Seed Homepage Banners
+    const bannerCount = await Banner.countDocuments();
+    if (bannerCount === 0) {
+      console.log('Seeding initial 4 homepage banners into MongoDB...');
+      await Banner.insertMany(initialBanners);
+      console.log(`Successfully seeded ${initialBanners.length} homepage promotional banners.`);
     }
 
     // 5. Seed Brochure Leads

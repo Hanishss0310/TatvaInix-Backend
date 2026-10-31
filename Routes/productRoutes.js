@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Product = require('../Models/Product');
+const Department = require('../Models/Department');
 const Category = require('../Models/Category');
 const Media = require('../Models/Media');
 const AuditLog = require('../Models/AuditLog');
@@ -49,12 +50,20 @@ const safeCleanProductImages = async (imageUrls) => {
 // Retrieve published products for public catalogue
 router.get('/', async (req, res) => {
   try {
-    const { category, search, grade, sort } = req.query;
+    const { category, department, search, grade, sort } = req.query;
     const filter = { status: 'published' };
 
-    // Category filter
-    if (category && category !== 'all') {
-      filter.category = category;
+    // Department / Category filter
+    const targetDept = department || category;
+    if (targetDept && targetDept !== 'all') {
+      const orConditions = [
+        { departmentSlug: targetDept },
+        { category: targetDept }
+      ];
+      if (targetDept.match(/^[0-9a-fA-F]{24}$/)) {
+        orConditions.push({ department: targetDept });
+      }
+      filter.$or = orConditions;
     }
 
     // Material grade filter
@@ -65,13 +74,19 @@ router.get('/', async (req, res) => {
     // Search query across name, description, SKU, materialGrade
     if (search && search.trim()) {
       const q = search.trim();
-      filter.$or = [
+      const searchConditions = [
         { name: { $regex: q, $options: 'i' } },
         { shortDescription: { $regex: q, $options: 'i' } },
         { description: { $regex: q, $options: 'i' } },
         { sku: { $regex: q, $options: 'i' } },
         { materialGrade: { $regex: q, $options: 'i' } }
       ];
+      if (filter.$or) {
+        filter.$and = [{ $or: filter.$or }, { $or: searchConditions }];
+        delete filter.$or;
+      } else {
+        filter.$or = searchConditions;
+      }
     }
 
     // Sorting
@@ -82,7 +97,7 @@ router.get('/', async (req, res) => {
     else if (sort === 'price_asc') sortOption = { basePrice: 1 };
     else if (sort === 'price_desc') sortOption = { basePrice: -1 };
 
-    const products = await Product.find(filter).sort(sortOption);
+    const products = await Product.find(filter).populate('department').sort(sortOption);
     res.json(products);
   } catch (err) {
     console.error('Error fetching public products:', err);
@@ -94,7 +109,21 @@ router.get('/', async (req, res) => {
 // Retrieve all products (published, draft, archived) for admin panel
 router.get('/admin', async (req, res) => {
   try {
-    const products = await Product.find().sort({ createdAt: -1 });
+    const { department, category } = req.query;
+    const filter = {};
+    const targetDept = department || category;
+    if (targetDept && targetDept !== 'all') {
+      const orConditions = [
+        { departmentSlug: targetDept },
+        { category: targetDept }
+      ];
+      if (targetDept.match(/^[0-9a-fA-F]{24}$/)) {
+        orConditions.push({ department: targetDept });
+      }
+      filter.$or = orConditions;
+    }
+
+    const products = await Product.find(filter).populate('department').sort({ createdAt: -1 });
     res.json(products);
   } catch (err) {
     console.error('Error fetching admin products:', err);
@@ -160,6 +189,8 @@ router.post('/', authenticateAdmin, (req, res, next) => {
       name,
       slug,
       sku,
+      department,
+      departmentId,
       category,
       categoryName,
       shortDescription,
@@ -186,8 +217,10 @@ router.post('/', authenticateAdmin, (req, res, next) => {
     if (!sku || !sku.trim()) {
       return res.status(400).json({ message: 'Product SKU is required' });
     }
-    if (!category || !category.trim()) {
-      return res.status(400).json({ message: 'Category is required' });
+
+    const targetDeptRef = (department || departmentId || category || '').toString().trim();
+    if (!targetDeptRef) {
+      return res.status(400).json({ message: 'Department is required' });
     }
 
     const cleanSlug = slug && slug.trim() ? slugify(slug) : slugify(name);
@@ -208,14 +241,26 @@ router.post('/', authenticateAdmin, (req, res, next) => {
       return res.status(400).json({ message: `A product with SKU '${cleanSku}' already exists.` });
     }
 
-    // Resolve category display name
-    let resolvedCategoryName = categoryName;
-    if (!resolvedCategoryName) {
-      const catDoc = await Category.findOne({
-        $or: [{ slug: category }, { _id: category.match(/^[0-9a-fA-F]{24}$/) ? category : null }]
-      });
-      resolvedCategoryName = catDoc?.name || category;
+    // Resolve department document
+    let deptDoc = null;
+    if (targetDeptRef.match(/^[0-9a-fA-F]{24}$/)) {
+      deptDoc = await Department.findById(targetDeptRef);
     }
+    if (!deptDoc) {
+      deptDoc = await Department.findOne({ slug: targetDeptRef.toLowerCase() });
+    }
+    if (!deptDoc) {
+      const catDoc = await Category.findOne({
+        $or: [{ slug: targetDeptRef }, { _id: targetDeptRef.match(/^[0-9a-fA-F]{24}$/) ? targetDeptRef : null }]
+      });
+      if (catDoc) {
+        deptDoc = await Department.findOne({ slug: catDoc.slug });
+      }
+    }
+
+    const finalDeptId = deptDoc?._id || (targetDeptRef.match(/^[0-9a-fA-F]{24}$/) ? targetDeptRef : null);
+    const finalDeptSlug = deptDoc?.slug || targetDeptRef.toLowerCase();
+    const finalDeptName = deptDoc?.name || categoryName || targetDeptRef;
 
     // Assemble image array
     const newImageUrls = uploadedImages.map(f => `/uploads/products/${f.filename}`);
@@ -253,8 +298,11 @@ router.post('/', authenticateAdmin, (req, res, next) => {
       name: name.trim(),
       slug: cleanSlug,
       sku: cleanSku,
-      category: category.trim(),
-      categoryName: resolvedCategoryName,
+      department: finalDeptId,
+      departmentSlug: finalDeptSlug,
+      departmentName: finalDeptName,
+      category: finalDeptSlug,
+      categoryName: finalDeptName,
       shortDescription: shortDescription || '',
       description: description || '',
       materialGrade: materialGrade || 'AISI 304 Surgical Grade Stainless Steel',
@@ -330,6 +378,8 @@ router.put('/:id', authenticateAdmin, (req, res, next) => {
       name,
       slug,
       sku,
+      department,
+      departmentId,
       category,
       categoryName,
       shortDescription,
@@ -381,12 +431,37 @@ router.put('/:id', authenticateAdmin, (req, res, next) => {
     }
 
     if (name) product.name = name.trim();
-    if (category) {
-      product.category = category.trim();
-      const catDoc = await Category.findOne({
-        $or: [{ slug: category }, { _id: category.match(/^[0-9a-fA-F]{24}$/) ? category : null }]
-      });
-      product.categoryName = categoryName || catDoc?.name || category;
+
+    const targetDeptRef = (department || departmentId || category || '').toString().trim();
+    if (targetDeptRef) {
+      let deptDoc = null;
+      if (targetDeptRef.match(/^[0-9a-fA-F]{24}$/)) {
+        deptDoc = await Department.findById(targetDeptRef);
+      }
+      if (!deptDoc) {
+        deptDoc = await Department.findOne({ slug: targetDeptRef.toLowerCase() });
+      }
+      if (!deptDoc) {
+        const catDoc = await Category.findOne({
+          $or: [{ slug: targetDeptRef }, { _id: targetDeptRef.match(/^[0-9a-fA-F]{24}$/) ? targetDeptRef : null }]
+        });
+        if (catDoc) {
+          deptDoc = await Department.findOne({ slug: catDoc.slug });
+        }
+      }
+
+      if (deptDoc) {
+        product.department = deptDoc._id;
+        product.departmentSlug = deptDoc.slug;
+        product.departmentName = deptDoc.name;
+        product.category = deptDoc.slug;
+        product.categoryName = deptDoc.name;
+      } else {
+        product.departmentSlug = targetDeptRef.toLowerCase();
+        product.departmentName = categoryName || targetDeptRef;
+        product.category = targetDeptRef.toLowerCase();
+        product.categoryName = categoryName || targetDeptRef;
+      }
     }
 
     if (shortDescription !== undefined) product.shortDescription = shortDescription;

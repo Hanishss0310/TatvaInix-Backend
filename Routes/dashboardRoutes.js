@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 const Product = require('../Models/Product');
+const Department = require('../Models/Department');
+const Banner = require('../Models/Banner');
 const Category = require('../Models/Category');
 const BrochureLead = require('../Models/BrochureLead');
 const DownloadEvent = require('../Models/DownloadEvent');
@@ -21,6 +23,10 @@ router.get('/stats', async (req, res) => {
       totalProducts,
       publishedProducts,
       draftProducts,
+      totalDepartments,
+      activeDepartments,
+      totalBanners,
+      activeBanners,
       totalCategories,
       totalLeads,
       newLeads,
@@ -38,11 +44,16 @@ router.get('/stats', async (req, res) => {
       totalArticles,
       recentLogs,
       recentLeads,
-      recentEnquiries
+      recentEnquiries,
+      recentProducts
     ] = await Promise.all([
       Product.countDocuments(),
       Product.countDocuments({ status: 'published' }),
       Product.countDocuments({ status: 'draft' }),
+      Department.countDocuments(),
+      Department.countDocuments({ status: { $in: ['active', 'published'] } }),
+      Banner.countDocuments(),
+      Banner.countDocuments({ status: 'active' }),
       Category.countDocuments(),
       BrochureLead.countDocuments(),
       BrochureLead.countDocuments({ leadStatus: 'New' }),
@@ -60,7 +71,8 @@ router.get('/stats', async (req, res) => {
       Article.countDocuments(),
       AuditLog.find().sort({ timestamp: -1 }).limit(10),
       BrochureLead.find().sort({ createdAt: -1 }).limit(5),
-      Enquiry.find().sort({ createdAt: -1 }).limit(5)
+      Enquiry.find().sort({ createdAt: -1 }).limit(5),
+      Product.find().sort({ createdAt: -1 }).limit(5)
     ]);
 
     // Lead status distribution
@@ -76,6 +88,10 @@ router.get('/stats', async (req, res) => {
 
     res.json({
       totalProducts,
+      totalDepartments,
+      activeDepartments,
+      totalBanners,
+      activeBanners,
       totalCategories,
       totalBrochureLeads: totalLeads,
       totalDownloads,
@@ -84,7 +100,16 @@ router.get('/stats', async (req, res) => {
       products: {
         total: totalProducts,
         published: publishedProducts,
-        draft: draftProducts
+        draft: draftProducts,
+        recent: recentProducts
+      },
+      departments: {
+        total: totalDepartments,
+        active: activeDepartments
+      },
+      banners: {
+        total: totalBanners,
+        active: activeBanners
       },
       categories: {
         total: totalCategories
@@ -117,6 +142,8 @@ router.get('/stats', async (req, res) => {
       articles: {
         total: totalArticles
       },
+      recentProducts,
+      recentEnquiries,
       activityLogs: recentLogs
     });
   } catch (err) {
